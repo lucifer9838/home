@@ -1,0 +1,290 @@
+html{
+    --bg:#FCFCFC;
+    --color-text:#311D3F;
+
+}
+
+html[data-theme='dark']{
+    --bg:#333333;
+    --color-text:#FCFCFC;
+}
+
+body{
+    background-color:var(--bg);
+}
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.mode{
+    position: absolute;
+    top: 5%;
+    width:50px;
+    font-size: large;
+    right: 10%;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: var(--color-text);
+}
+
+.Intro{
+    grid-area: Intro;
+    padding-top: 0;
+    text-align: left;
+    
+    margin-left: 18%;
+    font-size: 1.5rem;
+   
+    grid-row: 2/3;
+    grid-column: 1/3;
+    
+}
+.image{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    position: relative;
+
+    height: 200px;
+}
+.Intro h1{
+    position: relative;
+    top: -10%;
+
+    color: var(--color-text)
+}
+.Intro h3{
+    position: relative;
+    top: -11%;
+    float: left;
+    padding-left: 0;
+    color: var(--color-text)
+}
+
+
+.waves{
+    bottom: 0;
+}
+
+.wave{
+position: absolute;
+bottom: 0px;
+opacity: 0.7;
+left: 0;
+
+}
+.wave2
+{
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.7;
+    left: 0;
+}
+
+
+
+.cursor{
+    
+    display: inline-block;
+    width: 1px;
+    top: 50%;
+    background-color: black;
+    margin-left: 0.1rem;
+    animation:blink 1s infinite;
+    color: white;
+
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    50%{opacity: 1;}
+    
+    100%{opacity: 0;}        }
+
+
+#box1{
+animation: box_1 1s ease-in-out infinite alternate;
+}
+#box2{
+animation: box_2 1s ease-in-out infinite alternate;
+}
+#box3{
+animation: box_3 1s ease-in-out infinite alternate;
+}
+#head{
+animation: head_1 1s ease-in-out infinite alternate;
+transform-origin: 50% 100% 0px;
+transform-box: fill-box;
+}
+
+@keyframes box_1{
+from{
+
+transform: translateX(0);
+}
+to{
+
+transform: translateX(3%);
+}
+
+}
+@keyframes box_2{
+from{
+transform: translateY(0);
+
+}
+to{
+transform: translateY(-5%);
+
+}
+
+}
+@keyframes box_3{
+from{
+transform: translateX(0);
+
+}
+to{
+transform: translateX(-5%);
+
+}
+
+}
+
+@keyframes head_1{
+from{
+transform: rotateZ(-10deg)
+}
+to{
+transform: rotateZ(3deg)
+}
+
+}
+@media(max-width: 812px){
+
+    main{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+        }
+
+        .Intro{
+            grid-area: Intro;
+            padding-top: 0;
+            text-align: left;
+            
+            margin-left: 18%;
+            font-size: 1.5rem;
+           
+            grid-row: 2/3;
+            grid-column: 1/3;
+            
+        }
+        .image{
+            grid-row: 2/3;
+            grid-column: 3/4;
+            position: relative;
+            left: -15%;
+            height: 200px;
+        }
+        .Intro h1{
+            position: relative;
+            top: -10%;
+            left: 3%;
+            color: var(--color-text);
+            font-size:30px;
+        }
+        .Intro h3{
+            position: relative;
+            top: -15%;
+            left: 3%;
+            color: var(--color-text);
+            font-size:20px;
+        }
+
+        .mode{
+
+            width:50px;
+            font-size: large;
+            right: 10%;
+            font-family: sans-serif;
+            font-weight: 700;
+            color: var(--color-text)
+        }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 333px){
+
+
+    main{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+        }
+        .Intro{
+
+           
+            grid-row: 2/3;
+            grid-column: 1/2;
+            
+        }
+        .image{
+            position: relative;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            width: 100px;
+            left: 60%;
+            top: 10%;
+
+        }
+
+        .Intro h1{
+            position: relative;
+            top: 5%;
+            left: -15%;
+            color: var(--color-text);
+            font-size: 17px;
+            
+        }
+        .Intro h3{
+            position: relative;
+            top: 1%;
+            left: -15%;
+            color: var(--color-text);
+            font-size: small;
+        }
+
+        .mode{
+            margin: 0;
+            width:50px;
+            font-size: medium;
+            right: 20%;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: var(--color-text)
+        }
+
+
+}
+
+
+
+
