@@ -164,7 +164,7 @@ transform: rotateZ(3deg)
 }
 @media(max-width: 812px){
 
-    main{
+    main{   background:black;
             height: 100vh;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -232,7 +232,7 @@ transform: rotateZ(3deg)
 @media(max-width: 333px){
 
 
-    main{   background:black;
+    main{   
             height: 100vh;
             display: grid;
             grid-template-columns: 1fr;
